@@ -1,19 +1,19 @@
-# Sistema de Agendamento Veterin�rio
+# Sistema de Agendamento Veterinário
 
-Sistema web para gerenciamento de consultas veterin�rias desenvolvido em PHP 8 com arquitetura MVC e banco de dados MySQL.
+Sistema web para gerenciamento de consultas veterinárias desenvolvido em PHP 8 com arquitetura MVC e banco de dados MySQL.
 
-## ?? Funcionalidades
+## 🚀 Funcionalidades
 
-- Cadastro e autentica��o de usu�rios
-- Gerenciamento de consultas veterin�rias
+- Cadastro e autenticação de usuários
+- Gerenciamento de consultas veterinárias
   - Listagem de todas as consultas
-  - Cria��o de novas consultas
-  - Edi��o de consultas existentes
-  - Exclus�o de consultas
-- Sistema de permiss�es (usu�rios s� podem editar/excluir suas pr�prias consultas)
+  - Criação de novas consultas
+  - Edição de consultas existentes
+  - Exclusão de consultas
+- Sistema de permissões (usuários só podem editar/excluir suas próprias consultas)
 - Interface responsiva com Bootstrap 5
 
-## ?? Pr�-requisitos
+## 📋 Pré-requisitos
 
 - PHP >= 8.0
 - MySQL >= 5.7
@@ -21,15 +21,15 @@ Sistema web para gerenciamento de consultas veterin�rias desenvolvido em PHP 8 c
 - Servidor web (Apache/Nginx)
 - mod_rewrite habilitado (Apache)
 
-## ?? Instala��o
+## 🔧 Instalação
 
-1. Clone o reposit�rio:
+1. Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/sistema-veterinario.git
 cd sistema-veterinario
 ```
 
-2. Instale as depend�ncias via Composer:
+2. Instale as dependências via Composer:
 ```bash
 composer install
 ```
@@ -41,10 +41,10 @@ composer install
 
 4. Configure o servidor web:
    - Configure o document root para a pasta `public/`
-   - Certifique-se que o mod_rewrite est� habilitado (Apache)
-   - Verifique as permiss�es das pastas
+   - Certifique-se que o mod_rewrite está habilitado (Apache)
+   - Verifique as permissões das pastas
 
-## ?? Configura��o
+## ⚙️ Configuração
 
 1. Banco de dados (`src/Config/Database.php`):
 ```php
@@ -54,43 +54,43 @@ private $username = "seu_usuario";
 private $password = "sua_senha";
 ```
 
-2. Permiss�es de pasta:
+2. Permissões de pasta:
 ```bash
 chmod 755 -R public/
 chmod 755 -R src/
 ```
 
-## ????? Executando o projeto
+## 🏃‍♂️ Executando o projeto
 
-1. Acesse o sistema atrav�s do navegador:
+1. Acesse o sistema através do navegador:
 ```
 http://localhost/sistema-veterinario/public
 ```
 
-2. Crie uma nova conta atrav�s da p�gina de registro
+2. Crie uma nova conta através da página de registro
 
-3. Fa�a login e comece a usar o sistema
+3. Faça login e comece a usar o sistema
 
-## ?? Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
 sistema-veterinario/
-??? public/           # Arquivos p�blicos
-?   ??? auth/        # Endpoints de autentica��o
-?   ??? index.php    # P�gina inicial
-?   ??? .htaccess    # Configura��o do Apache
-??? src/             # C�digo fonte
-?   ??? Config/      # Configura��es
-?   ??? Controllers/ # Controladores
-?   ??? Models/      # Modelos
-?   ??? Utils/       # Utilit�rios
-??? vendor/          # Depend�ncias (Composer)
-??? agenda.sql       # Estrutura do banco de dados
-??? composer.json    # Configura��o do Composer
-??? README.md        # Este arquivo
+├── public/           # Arquivos públicos acessíveis via navegador
+│   ├── auth/         # Endpoints de autenticação (login, registro)
+│   ├── index.php     # Página inicial
+│   ├── .htaccess     # Configuração do Apache para rotas
+├── src/              # Código fonte principal
+│   ├── Config/       # Configurações, como conexão com o banco de dados
+│   ├── Controllers/  # Controladores que lidam com a lógica das requisições
+│   ├── Models/       # Modelos que interagem diretamente com o banco de dados
+│   ├── Utils/        # Funções auxiliares e classes utilitárias
+├── vendor/           # Dependências gerenciadas pelo Composer
+├── agenda.sql        # Arquivo com a estrutura do banco de dados
+├── composer.json     # Configuração do Composer
+├── README.md         # Documentação do projeto
 ```
 
-## ??? Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 - PHP 8
 - MySQL
@@ -102,43 +102,43 @@ sistema-veterinario/
 - CSS3
 - JavaScript
 
-## ? Boas Pr�ticas Implementadas
+## ⚡ Boas Práticas Implementadas
 
 - Arquitetura MVC
-- Orienta��o a Objetos
-- Singleton para conex�o com banco de dados
-- Valida��o de dados
-- Gerenciamento de sess�o
-- Prote��o contra SQL Injection
+- Orientação a Objetos
+- Singleton para conexão com banco de dados
+- Validação de dados
+- Gerenciamento de sessão
+- Proteção contra SQL Injection
 - Criptografia de senha (MD5)
 - PSR-4 Autoloading
-- C�digo limpo e organizado
+- Código limpo e organizado
 
-## ?? Seguran�a
+## 🔒 Segurança
 
 - Senhas criptografadas com MD5
-- Prote��o contra SQL Injection usando PDO
-- Valida��o de sess�o
-- Valida��o de permiss�es
-- Sanitiza��o de dados
+- Proteção contra SQL Injection usando PDO
+- Validação de sessão
+- Validação de permissões
+- Sanitização de dados
 
-## ?? Contribuindo
+## 🤝 Contribuindo
 
-1. Fa�a um fork do projeto
+1. Faça um fork do projeto
 2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudan�as (`git commit -m 'Add some AmazingFeature'`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-## ?? Licen�a
+## 📝 Licença
 
-Este projeto est� sob a licen�a MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## ?? Autores
+## ✒️ Autores
 
 * **Gabriel G. C. Soares** - *Desenvolvimento inicial* - [gabriel-fstk](https://github.com/gabriel-fstk)
 
-## ?? Notas de Vers�o
+## 📄 Notas de Versão
 
 * 1.0.0
-    * Primeira vers�o do sistema
+    * Primeira versão do sistema
