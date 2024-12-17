@@ -1,0 +1,13 @@
+{
+    "name": "veterinary/appointment-system",
+    "description": "Sistema de Agendamento Veterinário",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0"
+    }
+}

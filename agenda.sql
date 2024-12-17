@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS agenda;
+USE agenda;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(32) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS consultas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    idade INT NOT NULL,
+    data DATE NOT NULL,
+    hora TIME NOT NULL,
+    motivo TEXT NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+);
